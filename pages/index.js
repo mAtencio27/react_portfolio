@@ -2,6 +2,7 @@ import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub, AiFillMail} from 'react-icons/ai';
 import Image from 'next/image';
+import portrait from '../public/portrait-square.JPG'
 
 
 export default function Home() {
@@ -40,7 +41,28 @@ export default function Home() {
             <a><AiFillGithub/></a>
             <a><AiFillMail/></a>
           </div>
+          <div className='relative mx-auto flex justify-center p-5'>
+            <Image src={portrait} className='rounded-full w-60 h-60'/>
+          </div>
         </section>
+
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Services I offer</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              I have sufficient skills with front end technologies
+              such as react and vue. I am also proficient and building
+              backends for e commerece sitets 
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Portfolio</h3>
+          </div>
+        </section>
+
       </main>
     </>
   )
