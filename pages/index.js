@@ -2,7 +2,7 @@ import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub, AiFillMail} from 'react-icons/ai';
 import Image from 'next/image';
-import portrait from '../public/portrait-square.JPG';
+import portrait from '../public/portrait-square.jpg';
 import eatable from '../public/eatable.png';
 import staticViewer from '../public/static-view.jpg';
 import eatableSmall from '../public/eatable-small.png'
@@ -41,7 +41,7 @@ export default function Home() {
             <a href="mailto:mAtencio270@gmail.com"><AiFillMail/></a>
           </div>
           <div className='relative mx-auto flex justify-center p-5'>
-            <Image src={portrait} className='rounded w-50 h-50'/>
+            <Image alt="" src={portrait} className='rounded w-50 h-50'/>
           </div>
         </section>
 
@@ -73,10 +73,10 @@ export default function Home() {
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'>
-              <Image src={staticViewer} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
+              <Image alt="" src={staticViewer} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image src={eatableSmall} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
+              <Image alt="" src={eatableSmall} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
             </div>
           </div>
         </section>
