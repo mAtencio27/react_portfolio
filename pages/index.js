@@ -41,7 +41,7 @@ export default function Home() {
             <a href="mailto:mAtencio270@gmail.com"><AiFillMail/></a>
           </div>
           <div className='relative mx-auto flex justify-center p-5'>
-            <Image src={portrait} className='rounded-full w-60 h-60'/>
+            <Image src={portrait} className='rounded w-50 h-50'/>
           </div>
         </section>
 
@@ -77,9 +77,6 @@ export default function Home() {
             </div>
             <div className='basis-1/3 flex-1'>
               <Image src={eatableSmall} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
             </div>
           </div>
         </section>
