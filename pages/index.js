@@ -2,8 +2,10 @@ import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub, AiFillMail} from 'react-icons/ai';
 import Image from 'next/image';
-import portrait from '../public/portrait-square.JPG'
-
+import portrait from '../public/portrait-square.JPG';
+import eatable from '../public/eatable.png';
+import staticViewer from '../public/static-view.jpg';
+import eatableSmall from '../public/eatable-small.png'
 
 export default function Home() {
   return (
@@ -14,32 +16,29 @@ export default function Home() {
         {/*<meta name="viewport" content="width=device-width, initial-scale=1" />*/}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-white px-10'>
+      <main className='bg-white px-10 md:px-20 lg:px-40'>
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
+          <nav className="py-5 mb-12 flex justify-between">
             <h1 className='text-xl font-burtons'>developedbyMarcus</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill className='curser-pointer text-2xl'/>
-              </li>
-              <li>
-                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border rounded-md ml-8' href="#">Resume</a>
+                <a className='bg-gradient-to-r from-purple-300 to-purple-600 text-white px-4 py-2 border rounded-md ml-8' href="#">Resume</a>
               </li>
 
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Marcus Atencio</h2>
-            <h3 className='text-2xl py-2'>Full-Stack Developer.</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>
+            <h2 className='text-5xl py-2 text-purple-700 font-medium md:text-6xl mx-auto'>Marcus Atencio</h2>
+            <h3 className='text-2xl py-2 md:text-3xl'>Full-Stack Developer.</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>
               Full Stack Developer based in Tokyo. Always looking
-              to grow and improve. Continue below to view my experience.
+              for the opportunity to grow and improve in the right enviroment. 
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-500'>
-            <a><AiFillLinkedin/></a>
-            <a><AiFillGithub/></a>
-            <a><AiFillMail/></a>
+            <a href='https://www.linkedin.com/in/marcus-atencio/'><AiFillLinkedin/></a>
+            <a href='https://github.com/mAtencio27'><AiFillGithub/></a>
+            <a href="mailto:mAtencio270@gmail.com"><AiFillMail/></a>
           </div>
           <div className='relative mx-auto flex justify-center p-5'>
             <Image src={portrait} className='rounded-full w-60 h-60'/>
@@ -60,6 +59,28 @@ export default function Home() {
         <section>
           <div>
             <h3 className='text-3xl py-1'>Portfolio</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              Since beginning my career as a software developer
+              I have had the opportunity to collaberate with seasoned developers
+              on several projects, building both business and consumer 
+              facing applications.
+            </p>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              I am also committed to the tech community in Tokyo and
+              often collaberate with developers on builds while also 
+              providing instruction and mentorship to students.
+            </p>
+          </div>
+          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+            <div className='basis-1/3 flex-1'>
+              <Image src={staticViewer} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={eatableSmall} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
+            </div>
           </div>
         </section>
 
