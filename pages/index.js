@@ -40,7 +40,7 @@ export default function Home() {
             <a href='https://github.com/mAtencio27'><AiFillGithub/></a>
             <a href="mailto:mAtencio270@gmail.com"><AiFillMail/></a>
           </div>
-          <div className='relative mx-auto flex justify-center p-5'>
+          <div className='relative mx-auto flex justify-center p-5 max-w-sm'>
             <Image alt="" src={portrait} className='rounded w-50 h-50'/>
           </div>
         </section>
